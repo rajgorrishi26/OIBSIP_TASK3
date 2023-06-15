@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TO-DO App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>TO-DO App</h1>
+
+    <div class="container">
+        <div id="box">
+            <div id="todo-container">
+                <div class="input-container">
+                    <label for="title-input">Title:</label><br>
+                    <input type="text" id="title-input" placeholder="Enter activity title">
+                </div>
+                <div class="input-container">
+                    <label for="reminder-input">Reminder:</label>
+                    <input type="datetime-local" id="reminder-input">
+                </div>
+                <div class="input-container">
+                    <label for="description-input">Description:</label>
+                    <textarea id="description-input" placeholder="Enter activity description"></textarea>
+                </div>
+                <button id="add-btn">Add</button>
+            </div>
+        </div>
+
+        <div id="history-container">
+            <h2>History</h2>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
